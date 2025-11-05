@@ -89,27 +89,6 @@ cd .\folder's name\
 ```bash
 python file_name.p
 ```
-برای ساخت venv از دستور :
-```bash
-python -m venv venv
-```
-
-برای فعال کردن venv:
-(همه پکیج ها به venv اضافه میشن )
-```bash
-.\venv\Scripts\activate
-```
-غیر فعال کردن:
-
-```bash 
-deactivate
-```
-
- نصب پکیج جدید مثلا fast api :
-
-```bash
- pip install "fastapi[standard]"
- ```
 
  وقتی استفاده میشه که بخوای یه اسکریپت PowerShell (مثل نصب FastAPI، یا 
  اجرای یه فایل .ps1) رو اجرا کنی ولی خطا بگیری با پیام
@@ -152,6 +131,12 @@ fastapi dev main1.py
 ذخیره‌ی فهرست پکیج‌های نصب‌شده در فایل req.txt
 ```bash
 pip freeze > req.txt   
+```
+
+
+نصب پکیج های موجود در فایل req.txt
+```bash
+pip install -r req.txt
 ```
 
 این دستور سرور FastAPI رو از فایل main.py بالا میاره و روی پورت ۸۰ در دسترس همه‌ی دستگاه‌ها قرار می‌ده
